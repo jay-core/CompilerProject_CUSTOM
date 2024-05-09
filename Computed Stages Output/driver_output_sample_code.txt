@@ -1,0 +1,139 @@
+Error: 0
+252.000000 Clocks | 0.000252 sec | Nodes: 47
+==============Parser Tree Details=====================
+program -> otherFunctions -> eps 
+mainFunction -> TK_MAIN stmts -> typeDefinitions -> eps 
+declarations -> declaration -> TK_TYPE dataType -> primitiveDatatype -> TK_REAL 
+
+TK_COLON TK_ID global_or_not -> eps 
+TK_SEM 
+declarations -> eps 
+
+otherStmts -> stmt -> assignmentStmt -> singleOrRecId -> TK_ID option_single_constructed -> eps 
+
+TK_ASSIGNOP arithmeticExpression -> term -> factor -> var -> TK_NUM 
+
+termPrime -> eps 
+
+expPrime -> eps 
+
+TK_SEM 
+
+otherStmts -> eps 
+
+returnStmt -> TK_RETURN optionalReturn -> eps 
+TK_SEM 
+
+TK_END 
+
+
+======================================================
+
+===============Parse Tree=============================
+Lexeme: eps, LineNo: 2, TokenName: eps, ValueOfNumber: ----, parentNodeSymbol: otherFunctions, isLeafNode: YES, NodeSymbol: eps
+Lexeme: ----, LineNo: ----, TokenName: otherFunctions, ValueOfNumber: ----, parentNodeSymbol: program, isLeafNode: NO, NodeSymbol: otherFunctions
+Lexeme: ----, LineNo: ----, TokenName: program, ValueOfNumber: ----, parentNodeSymbol: ROOT, isLeafNode: NO, NodeSymbol: program
+Lexeme: _main, LineNo: 2, TokenName: _main, ValueOfNumber: ----, parentNodeSymbol: mainFunction, isLeafNode: YES, NodeSymbol: TK_MAIN
+Lexeme: ----, LineNo: ----, TokenName: mainFunction, ValueOfNumber: ----, parentNodeSymbol: program, isLeafNode: NO, NodeSymbol: mainFunction
+Lexeme: eps, LineNo: 3, TokenName: eps, ValueOfNumber: ----, parentNodeSymbol: typeDefinitions, isLeafNode: YES, NodeSymbol: eps
+Lexeme: ----, LineNo: ----, TokenName: typeDefinitions, ValueOfNumber: ----, parentNodeSymbol: stmts, isLeafNode: NO, NodeSymbol: typeDefinitions
+Lexeme: ----, LineNo: ----, TokenName: stmts, ValueOfNumber: ----, parentNodeSymbol: mainFunction, isLeafNode: NO, NodeSymbol: stmts
+Lexeme: type, LineNo: 3, TokenName: type, ValueOfNumber: ----, parentNodeSymbol: declaration, isLeafNode: YES, NodeSymbol: TK_TYPE
+Lexeme: ----, LineNo: ----, TokenName: declaration, ValueOfNumber: ----, parentNodeSymbol: declarations, isLeafNode: NO, NodeSymbol: declaration
+Lexeme: real, LineNo: 3, TokenName: real, ValueOfNumber: real, parentNodeSymbol: primitiveDatatype, isLeafNode: YES, NodeSymbol: TK_REAL
+Lexeme: ----, LineNo: ----, TokenName: primitiveDatatype, ValueOfNumber: ----, parentNodeSymbol: dataType, isLeafNode: NO, NodeSymbol: primitiveDatatype
+Lexeme: ----, LineNo: ----, TokenName: dataType, ValueOfNumber: ----, parentNodeSymbol: declaration, isLeafNode: NO, NodeSymbol: dataType
+Lexeme: :, LineNo: 3, TokenName: :, ValueOfNumber: ----, parentNodeSymbol: declaration, isLeafNode: YES, NodeSymbol: TK_COLON
+Lexeme: c3, LineNo: 3, TokenName: c3, ValueOfNumber: ----, parentNodeSymbol: declaration, isLeafNode: YES, NodeSymbol: TK_ID
+Lexeme: eps, LineNo: 3, TokenName: eps, ValueOfNumber: ----, parentNodeSymbol: global_or_not, isLeafNode: YES, NodeSymbol: eps
+Lexeme: ----, LineNo: ----, TokenName: global_or_not, ValueOfNumber: ----, parentNodeSymbol: declaration, isLeafNode: NO, NodeSymbol: global_or_not
+Lexeme: ;, LineNo: 3, TokenName: ;, ValueOfNumber: ----, parentNodeSymbol: declaration, isLeafNode: YES, NodeSymbol: TK_SEM
+Lexeme: ----, LineNo: ----, TokenName: declarations, ValueOfNumber: ----, parentNodeSymbol: stmts, isLeafNode: NO, NodeSymbol: declarations
+Lexeme: eps, LineNo: 4, TokenName: eps, ValueOfNumber: ----, parentNodeSymbol: declarations, isLeafNode: YES, NodeSymbol: eps
+Lexeme: ----, LineNo: ----, TokenName: declarations, ValueOfNumber: ----, parentNodeSymbol: declarations, isLeafNode: NO, NodeSymbol: declarations
+Lexeme: c3, LineNo: 4, TokenName: c3, ValueOfNumber: ----, parentNodeSymbol: singleOrRecId, isLeafNode: YES, NodeSymbol: TK_ID
+Lexeme: ----, LineNo: ----, TokenName: singleOrRecId, ValueOfNumber: ----, parentNodeSymbol: assignmentStmt, isLeafNode: NO, NodeSymbol: singleOrRecId
+Lexeme: eps, LineNo: 4, TokenName: eps, ValueOfNumber: ----, parentNodeSymbol: option_single_constructed, isLeafNode: YES, NodeSymbol: eps
+Lexeme: ----, LineNo: ----, TokenName: option_single_constructed, ValueOfNumber: ----, parentNodeSymbol: singleOrRecId, isLeafNode: NO, NodeSymbol: option_single_constructed
+Lexeme: ----, LineNo: ----, TokenName: assignmentStmt, ValueOfNumber: ----, parentNodeSymbol: stmt, isLeafNode: NO, NodeSymbol: assignmentStmt
+Lexeme: <---, LineNo: 4, TokenName: <---, ValueOfNumber: ----, parentNodeSymbol: assignmentStmt, isLeafNode: YES, NodeSymbol: TK_ASSIGNOP
+Lexeme: 3, LineNo: 4, TokenName: 3, ValueOfNumber: ----, parentNodeSymbol: var, isLeafNode: YES, NodeSymbol: TK_NUM
+Lexeme: ----, LineNo: ----, TokenName: var, ValueOfNumber: ----, parentNodeSymbol: factor, isLeafNode: NO, NodeSymbol: var
+Lexeme: ----, LineNo: ----, TokenName: factor, ValueOfNumber: ----, parentNodeSymbol: term, isLeafNode: NO, NodeSymbol: factor
+Lexeme: ----, LineNo: ----, TokenName: term, ValueOfNumber: ----, parentNodeSymbol: arithmeticExpression, isLeafNode: NO, NodeSymbol: term
+Lexeme: eps, LineNo: 4, TokenName: eps, ValueOfNumber: ----, parentNodeSymbol: termPrime, isLeafNode: YES, NodeSymbol: eps
+Lexeme: ----, LineNo: ----, TokenName: termPrime, ValueOfNumber: ----, parentNodeSymbol: term, isLeafNode: NO, NodeSymbol: termPrime
+Lexeme: ----, LineNo: ----, TokenName: arithmeticExpression, ValueOfNumber: ----, parentNodeSymbol: assignmentStmt, isLeafNode: NO, NodeSymbol: arithmeticExpression
+Lexeme: eps, LineNo: 4, TokenName: eps, ValueOfNumber: ----, parentNodeSymbol: expPrime, isLeafNode: YES, NodeSymbol: eps
+Lexeme: ----, LineNo: ----, TokenName: expPrime, ValueOfNumber: ----, parentNodeSymbol: arithmeticExpression, isLeafNode: NO, NodeSymbol: expPrime
+Lexeme: ;, LineNo: 4, TokenName: ;, ValueOfNumber: ----, parentNodeSymbol: assignmentStmt, isLeafNode: YES, NodeSymbol: TK_SEM
+Lexeme: ----, LineNo: ----, TokenName: stmt, ValueOfNumber: ----, parentNodeSymbol: otherStmts, isLeafNode: NO, NodeSymbol: stmt
+Lexeme: ----, LineNo: ----, TokenName: otherStmts, ValueOfNumber: ----, parentNodeSymbol: stmts, isLeafNode: NO, NodeSymbol: otherStmts
+Lexeme: eps, LineNo: 5, TokenName: eps, ValueOfNumber: ----, parentNodeSymbol: otherStmts, isLeafNode: YES, NodeSymbol: eps
+Lexeme: ----, LineNo: ----, TokenName: otherStmts, ValueOfNumber: ----, parentNodeSymbol: otherStmts, isLeafNode: NO, NodeSymbol: otherStmts
+Lexeme: return, LineNo: 5, TokenName: return, ValueOfNumber: ----, parentNodeSymbol: returnStmt, isLeafNode: YES, NodeSymbol: TK_RETURN
+Lexeme: ----, LineNo: ----, TokenName: returnStmt, ValueOfNumber: ----, parentNodeSymbol: stmts, isLeafNode: NO, NodeSymbol: returnStmt
+Lexeme: eps, LineNo: 5, TokenName: eps, ValueOfNumber: ----, parentNodeSymbol: optionalReturn, isLeafNode: YES, NodeSymbol: eps
+Lexeme: ----, LineNo: ----, TokenName: optionalReturn, ValueOfNumber: ----, parentNodeSymbol: returnStmt, isLeafNode: NO, NodeSymbol: optionalReturn
+Lexeme: ;, LineNo: 5, TokenName: ;, ValueOfNumber: ----, parentNodeSymbol: returnStmt, isLeafNode: YES, NodeSymbol: TK_SEM
+Lexeme: end, LineNo: 6, TokenName: end, ValueOfNumber: ----, parentNodeSymbol: mainFunction, isLeafNode: YES, NodeSymbol: TK_END
+
+======================================================
+262.000000 Clocks | 0.000514 sec | Nodes: 24
+=================AST Tree Details=====================
+program -> otherFunctions -> 
+mainFunction -> stmts -> typeDefinitions -> 
+declarations -> declaration -> TK_REAL TK_ID global_or_not -> 
+
+declarations -> 
+
+otherStmts -> assignmentStmt -> singleOrRecId -> TK_ID option_single_constructed -> 
+
+arithmeticExpression -> term -> TK_NUM termPrime -> 
+
+expPrime -> 
+
+
+otherStmts -> 
+
+returnStmt -> optionalReturn -> 
+
+
+
+
+
+======================================================
+
+=================AST Tree=============================
+Lexeme: ----, LineNo: ----, TokenName: otherFunctions, ValueOfNumber: ----, parentNodeSymbol: program, isLeafNode: NO, NodeSymbol: otherFunctions
+Lexeme: ----, LineNo: ----, TokenName: program, ValueOfNumber: ----, parentNodeSymbol: ROOT, isLeafNode: NO, NodeSymbol: program
+Lexeme: ----, LineNo: ----, TokenName: typeDefinitions, ValueOfNumber: ----, parentNodeSymbol: stmts, isLeafNode: NO, NodeSymbol: typeDefinitions
+Lexeme: ----, LineNo: ----, TokenName: stmts, ValueOfNumber: ----, parentNodeSymbol: mainFunction, isLeafNode: NO, NodeSymbol: stmts
+Lexeme: real, LineNo: 3, TokenName: real, ValueOfNumber: real, parentNodeSymbol: declaration, isLeafNode: YES, NodeSymbol: TK_REAL
+Lexeme: ----, LineNo: ----, TokenName: declaration, ValueOfNumber: ----, parentNodeSymbol: declarations, isLeafNode: NO, NodeSymbol: declaration
+Lexeme: c3, LineNo: 3, TokenName: c3, ValueOfNumber: ----, parentNodeSymbol: declaration, isLeafNode: YES, NodeSymbol: TK_ID
+Lexeme: ----, LineNo: ----, TokenName: global_or_not, ValueOfNumber: ----, parentNodeSymbol: declaration, isLeafNode: NO, NodeSymbol: global_or_not
+Lexeme: ----, LineNo: ----, TokenName: declarations, ValueOfNumber: ----, parentNodeSymbol: stmts, isLeafNode: NO, NodeSymbol: declarations
+Lexeme: ----, LineNo: ----, TokenName: declarations, ValueOfNumber: ----, parentNodeSymbol: declarations, isLeafNode: NO, NodeSymbol: declarations
+Lexeme: c3, LineNo: 4, TokenName: c3, ValueOfNumber: ----, parentNodeSymbol: singleOrRecId, isLeafNode: YES, NodeSymbol: TK_ID
+Lexeme: ----, LineNo: ----, TokenName: singleOrRecId, ValueOfNumber: ----, parentNodeSymbol: assignmentStmt, isLeafNode: NO, NodeSymbol: singleOrRecId
+Lexeme: ----, LineNo: ----, TokenName: option_single_constructed, ValueOfNumber: ----, parentNodeSymbol: singleOrRecId, isLeafNode: NO, NodeSymbol: option_single_constructed
+Lexeme: ----, LineNo: ----, TokenName: assignmentStmt, ValueOfNumber: ----, parentNodeSymbol: otherStmts, isLeafNode: NO, NodeSymbol: assignmentStmt
+Lexeme: 3, LineNo: 4, TokenName: 3, ValueOfNumber: ----, parentNodeSymbol: term, isLeafNode: YES, NodeSymbol: TK_NUM
+Lexeme: ----, LineNo: ----, TokenName: term, ValueOfNumber: ----, parentNodeSymbol: arithmeticExpression, isLeafNode: NO, NodeSymbol: term
+Lexeme: ----, LineNo: ----, TokenName: termPrime, ValueOfNumber: ----, parentNodeSymbol: term, isLeafNode: NO, NodeSymbol: termPrime
+Lexeme: ----, LineNo: ----, TokenName: arithmeticExpression, ValueOfNumber: ----, parentNodeSymbol: assignmentStmt, isLeafNode: NO, NodeSymbol: arithmeticExpression
+Lexeme: ----, LineNo: ----, TokenName: expPrime, ValueOfNumber: ----, parentNodeSymbol: arithmeticExpression, isLeafNode: NO, NodeSymbol: expPrime
+Lexeme: ----, LineNo: ----, TokenName: otherStmts, ValueOfNumber: ----, parentNodeSymbol: stmts, isLeafNode: NO, NodeSymbol: otherStmts
+Lexeme: ----, LineNo: ----, TokenName: otherStmts, ValueOfNumber: ----, parentNodeSymbol: otherStmts, isLeafNode: NO, NodeSymbol: otherStmts
+Lexeme: ----, LineNo: ----, TokenName: optionalReturn, ValueOfNumber: ----, parentNodeSymbol: returnStmt, isLeafNode: NO, NodeSymbol: optionalReturn
+Lexeme: ----, LineNo: ----, TokenName: returnStmt, ValueOfNumber: ----, parentNodeSymbol: stmts, isLeafNode: NO, NodeSymbol: returnStmt
+Lexeme: ----, LineNo: ----, TokenName: mainFunction, ValueOfNumber: ----, parentNodeSymbol: program, isLeafNode: NO, NodeSymbol: mainFunction
+
+======================================================
+
+
+Parse Tree number of nodes= 47  Allocated Memory = 1880 Bytes
+
+AST number of nodes= 24 Allocated Memory = 960 Bytes
+Compression Percentage = 48.936170

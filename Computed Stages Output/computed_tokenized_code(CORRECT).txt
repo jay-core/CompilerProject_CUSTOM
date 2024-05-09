@@ -1,0 +1,7 @@
+==================Tokenized Code======================
+Line no. 2      Lexeme _main            Token TK_MAIN
+Line no. 3      Lexeme return           Token TK_RETURN
+Line no. 3      Lexeme ;                Token TK_SEM
+Line no. 4      Lexeme end              Token TK_END
+
+======================================================
