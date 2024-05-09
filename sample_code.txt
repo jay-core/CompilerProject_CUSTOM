@@ -1,0 +1,36 @@
+% Smallest working code
+_statistics input parameter list [int c2dbc,int d7,int b2d567] output parameter list [real d2, real c3bcd];
+    type real: c5 : global; 
+    c5 <---3;
+    d2 <--- (c2dbc + d7 + b2d567)/c5;
+    c3bcd <--- d2*3.23;
+    return [d2,c3bcd];
+end
+_main
+
+    record #marks
+		type real : maths; 
+		type real: physics; 
+		type real: chemistry;
+	endrecord
+    
+    type real: c3;
+    type record #marks : d26;
+
+    type record #marks : d4 : global;
+    type real: d3 : global;
+    type real: d222 : global;
+
+    type int: d72;
+    type int: d73;
+    type boolean: d74;
+
+    d72 <--- 3; 
+    d73 <--- 2; 
+
+    d74 <--- (d72 @@@ d73);
+	
+    % c3 <--- 3;
+
+    return;
+end
